@@ -35,9 +35,6 @@ lib/
 dist/
 tsconfig.tsbuildinfo
 
-# Unsupported lock files
-package-lock.json
-
 tmp/
 
 # Incubed (in3) nodelist
