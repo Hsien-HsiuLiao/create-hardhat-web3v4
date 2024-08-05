@@ -1,6 +1,6 @@
 {
-  "name": "hardhat-web3-ts",
-  "version": "0.1.1",
+  "name": "@chainsafe/hardhat-web3-ts",
+  "version": "0.1.0",
   "description": "Sample repository of a web3 based hardhat TS stack",
   "main": "index.ts",
   "repository": "https://github.com/web3/hardhat-web3.git",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@chainsafe/hardhat-ts-artifact-plugin": "^1.0.0",
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
