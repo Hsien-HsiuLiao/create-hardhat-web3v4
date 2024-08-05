@@ -1,5 +1,13 @@
 # hardhat-web3
 
+## Branches
+
+### Main Branch
+The `main` branch contains examples using: Web3.js, Hardhat and JavaScript
+
+### hardhat-web3-ts Branch
+The `hardhat-web3-ts` branch contains examples using: Web3.js, Hardhat and TypeScript
+
 ## Introduction
 
 This project demonstrates a basic Hardhat use case, focusing on testing a Token smart contract. It includes a sample contract, a test for that contract, and a script that deploys the contract.
