@@ -7,6 +7,11 @@
   resolved "https://registry.npmjs.org/@adraffy/ens-normalize/-/ens-normalize-1.10.1.tgz#63430d04bd8c5e74f8d7d049338f1cd9d4f02069"
   integrity sha512-96Z2IP3mYmF1Xg2cDm8f1gWGf/HUVedQ3FMifV4kG/PQ4yEP51xDtRAEfhVNt5f/uzpNkZHwWQuUcu6D6K+Ekw==
 
+"@chainsafe/hardhat-ts-artifact-plugin@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@chainsafe/hardhat-ts-artifact-plugin/-/hardhat-ts-artifact-plugin-1.0.0.tgz#418e978513dc8339f95d40952095ec91044d77b3"
+  integrity sha512-yBlmWb0fWrH8vBpajRN/xCzaTKvsF+zWKQIQa79OaaslMbHnnLm1WMtTfy8uXYymRWWQcS3y3O198+UyhKDfOg==
+
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
   resolved "https://registry.npmjs.org/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
