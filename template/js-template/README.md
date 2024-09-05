@@ -14,7 +14,7 @@ The project utilizes:
 
 ## Prerequisites
 
-- [Node.js and npm](https://nodejs.org/en/download/) (latest version)
+- [Node.js and NPM](https://nodejs.org/en/download/) (latest version)
 - Basic understanding of JavaScript and Ethereum smart contracts
 
 ## Getting Started
