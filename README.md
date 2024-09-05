@@ -1,19 +1,19 @@
-# hardhat-web3
+# create-hardhat-web3
+
+## Introduction
+
+This tool helps to create Web3.js based Hardhat project for contracts develpoment, testing and deployment. It includes a sample contract, a test for that contract, and a script that deploys the contract.
+
+The project utilizes:
+- Hardhat as the development environment
+- Chai for assertions
+- web3.js for interacting with Ethereum
 
 ### Web3.js Hardhat JS Template
 Contains template using: Web3.js, Hardhat and JavaScript
 
 ### Web3.js Hardhat TS Template
 Contains template using: Web3.js, Hardhat and TypeScript
-
-## Introduction
-
-This project demonstrates a basic Hardhat use case, focusing on deploying and testing smart contract on Hardhat. It includes a sample contract, a test for that contract, and a script that deploys the contract.
-
-The project utilizes:
-- Hardhat as the development environment
-- Chai for assertions
-- web3.js for interacting with Ethereum
 
 ## Prerequisites
 
@@ -26,17 +26,37 @@ Follow these steps to set up and run the project locally.
 
 ### Installation
 
-1. Clone the repository:
+1. Make a new directory:
    
-   `git clone git@github.com:web3/hardhat-web3.git`
+   `mkdir newproj`
 
-2. Install NPM packages:
+2. Create node project using NPm or Yarn:
    
-   `npm install`
+   `npm init -y` or
+   `yarn init -y`
+
+3. Install create-hardhat-web3 .
+
+   `npm i create-hardhat-web3` or
+   `yarn add create-hardhat-web3`
+
+4. Use required template for initilization of your project.
+
+For Hardhat, Web3.js, Javascript project :
+   `npx create-hardhat-web3 init` or
+   `npx create-hardhat-web3 init js`
+
+For Hardhat, Web3.js Typescript project :
+
+   `npx create-hardhat-web3 init ts`
+
+### Install dependencies
+Once project is created using template install dependencies using:
+   `npm i` or `yarn`
 
 ### Compiling the Contract
 
-Compile the smart contract with:
+After installing dependencies compile the smart contract with:
 
 `npx hardhat compile`
 
