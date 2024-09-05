@@ -1,14 +1,14 @@
 {
   "name": "create-hardhat-web3",
   "version": "0.1.0",
-  "description": "Web3 Hardhat template project",
+  "description": "Web3 Hardhat template project using web3.js v4",
   "main": "index.js",
   "repository": "git@github.com:web3/hardhat-web3.git",
   "author": "jdevcs <junaid@chainsafe.io>",
   "license": "MIT",
   "private": false,
   "bin": {
-    "create-hardhat-web3": "./bin/create-hardhat-web3-init.js"
+    "create-hardhat-web3": "./bin/init-script.js"
   },
   "files": [
     "bin",
