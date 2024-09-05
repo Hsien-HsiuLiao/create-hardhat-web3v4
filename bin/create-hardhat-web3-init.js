@@ -8,7 +8,7 @@ const command = process.argv[2];
 const targetDir = process.argv[3] || process.cwd();
 
 // Define the source directory (your existing project structure)
-const sourceDir = path.join(__dirname, '../template'); // Adjust this as needed
+const sourceDir = path.join(__dirname, '../template/ts'); // Adjust this as needed
 
 if (command === 'init') {
   // Copy the template files to the target directory
