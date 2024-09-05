@@ -1,21 +1,15 @@
 {
-  "name": "hardhat-web3",
+  "name": "hardhat-web3-js-template",
   "version": "0.1.0",
-  "description": "Sample repository of a web3 based hardhat stack",
+  "description": "Template of a web3.js v4 based hardhat stack using JS and NPM",
   "main": "index.js",
-  "scripts": {
-    "test": "npx hardhat test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/web3/hardhat-web3.git"
-  },
   "author": "jdevcs",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/web3/hardhat-web3/issues"
+  "private": true,
+  "scripts": {
+    "compile":"npx hardhat compile",
+    "test": "npx hardhat test"
   },
-  "homepage": "https://github.com/web3/hardhat-web3#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@nomicfoundation/hardhat-web3-v4": "^1.0.0",

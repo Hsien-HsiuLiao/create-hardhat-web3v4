@@ -1,15 +1,14 @@
 {
-  "name": "@chainsafe/hardhat-web3-ts",
+  "name": "hardhat-web3-ts-template",
   "version": "0.1.0",
-  "description": "Sample repository of a web3 based hardhat TS stack",
+  "description": "Template of a web3 based hardhat TS stack using Yarn and Typescript",
   "main": "index.ts",
-  "repository": "https://github.com/web3/hardhat-web3.git",
   "author": "jdevcs",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "npx hardhat test",
-    "compile":"npx hardhat compile"
+    "compile":"npx hardhat compile",
+    "test": "npx hardhat test"
   },
   "devDependencies": {
     "@chainsafe/hardhat-ts-artifact-plugin": "^1.0.0",
