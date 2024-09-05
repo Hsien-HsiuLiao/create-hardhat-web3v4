@@ -58,7 +58,7 @@ describe("Lock", function () {
 
     const artifact: Artifact = await hre.artifacts.readArtifact(contractName);
 
-    //for exact types support we will use @chainsafe/hardhat-ts-artifact-plugin by npx hardhat ts-artifact after npx hardhat compile and pass that to abi function param
+    // For exact types support we will use @chainsafe/hardhat-ts-artifact-plugin by npx hardhat ts-artifact after npx hardhat compile and pass that to abi function param
     const contract = new web3.eth.Contract(LockContract.abi);
 
     const deployedContract = await contract.deploy({
