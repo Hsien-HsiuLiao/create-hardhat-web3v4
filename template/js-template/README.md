@@ -1,10 +1,7 @@
 # hardhat-web3
 
 ### Web3.js Hardhat JS Template
-Contains template using: Web3.js, Hardhat and JavaScript
-
-### Web3.js Hardhat TS Template
-Contains template using: Web3.js, Hardhat and TypeScript
+Contains template using: Web3.js, Hardhat, JavaScript and NPM
 
 ## Introduction
 
@@ -26,11 +23,7 @@ Follow these steps to set up and run the project locally.
 
 ### Installation
 
-1. Clone the repository:
-   
-   `git clone git@github.com:web3/hardhat-web3.git`
-
-2. Install NPM packages:
+ Install NPM packages:
    
    `npm install`
 

@@ -1,12 +1,7 @@
 # hardhat-web3-ts
 
-## Branches
-
-### Main Branch
-The `main` branch contains examples using: Web3.js, Hardhat and JavaScript
-
-### hardhat-web3-ts Branch
-The `hardhat-web3-ts` branch contains examples using: Web3.js, Hardhat and TypeScript
+### Web3.js Hardhat TS Template
+Contains template using: Web3.js, Hardhat, TypeScript, Yarn and Typescript
 
 ## Introduction
 
@@ -19,7 +14,7 @@ The project utilizes:
 
 ## Prerequisites
 
-- [Node.js and npm](https://nodejs.org/en/download/) (latest version)
+- [Node.js](https://nodejs.org/en/download/) (latest version)
 - Basic understanding of JavaScript and Ethereum smart contracts
 
 ## Getting Started
@@ -28,12 +23,7 @@ Follow these steps to set up and run the project locally.
 
 ### Installation
 
-1. Clone the repository:
-   
-   `git clone git@github.com:web3/hardhat-web3.git` and
-   `git checkout hardhat-web3-ts`  for TS example
-
-2. Install packages:
+ Install packages:
    
    `yarn`
 
