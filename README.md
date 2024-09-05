@@ -30,7 +30,7 @@ Follow these steps to set up and run the project locally.
    
    `mkdir newproj`
 
-2. Create node project using NPm or Yarn:
+2. Create node project using NPM or Yarn:
    
    `npm init -y` or
    `yarn init -y`
