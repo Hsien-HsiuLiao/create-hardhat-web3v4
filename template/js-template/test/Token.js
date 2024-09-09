@@ -26,7 +26,8 @@ describe("Token contract", function () {
             from: senderAcct
         });
 
-        deployedContract.defaultAccount = senderAcct; // this will be used for sending transactions to contract in .send() function calls 
+        // this will be used for sending transactions to contract in .send() function calls 
+        deployedContract.defaultAccount = senderAcct; 
         return deployedContract;
     }
 
