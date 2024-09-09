@@ -9,9 +9,9 @@ import LockContract from "../artifacts/contracts/Lock.sol/Lock"
 import { Artifact } from "hardhat/types";
 
 describe("Lock", function () {
-  // We define a fixture to reuse the same setup in every test.
-  // We use loadFixture to run this setup once, snapshot that state,
-  // and reset Hardhat Network to that snapshot in every test.
+  /* We define a fixture to reuse the same setup in every test.
+   We use loadFixture to run this setup once, snapshot that state,
+   and reset Hardhat Network to that snapshot in every test. */
   const deployContract = async (
     contractName: string,
     constructorArgs: ContractConstructorArgs<typeof LockContract.abi>,
@@ -29,18 +29,21 @@ describe("Lock", function () {
 
     const artifact: Artifact = await hre.artifacts.readArtifact(contractName);
 
-    const contract = new web3.eth.Contract(artifact.abi);  // this will not have full types support 
+    // this will not have full types support 
+    const contract = new web3.eth.Contract(artifact.abi);  
 
     const deployedContract = await contract.deploy({
       data: artifact.bytecode,
       arguments: constructorArgs
     }).send(txOptionsObj);
 
-    deployedContract.defaultAccount = txOptionsObj.from; // this will be used for sending future transactions to contract for all .send() function calls 
+    // this will be used for sending future transactions to contract for all .send() function calls 
+    deployedContract.defaultAccount = txOptionsObj.from; 
     return deployedContract;
   }
 
-  //TODO: add  @chainsafe/hardhat-ts-artifact-plugin output support in Artifacts object in HRE and use above function for reading abi from there with full types support
+  /*TODO: add  @chainsafe/hardhat-ts-artifact-plugin output support in Artifacts object in 
+  HRE and use above function for reading abi from there with full types support */
   const deployLockContract = async (
     constructorArgs: ContractConstructorArgs<typeof LockContract.abi>,
     txOptions: PayableCallOptions = {}
@@ -66,7 +69,8 @@ describe("Lock", function () {
       arguments: constructorArgs
     }).send(txOptionsObj);
 
-    deployedContract.defaultAccount = txOptionsObj.from; // this will be used for sending future transactions to contract for all .send() function calls 
+    // this will be used for sending future transactions to contract for all .send() function calls 
+    deployedContract.defaultAccount = txOptionsObj.from; 
     return deployedContract;
   }
 
