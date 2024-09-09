@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tool helps to create Web3.js based Hardhat project for contracts develpoment, testing and deployment. It includes a sample contract, a test for that contract, and a script that deploys the contract.
+This tool helps to create `Web3.js` based `Hardhat` project for contracts develpoment, testing and deployment. It includes a sample contract, some tests for that contract, and a script that deploys the contract.
 
 The project utilizes:
 - Hardhat as the development environment
@@ -30,7 +30,10 @@ Follow these steps to set up and run the project locally.
    
    `mkdir newproj`
 
-2. Create node project using NPM or Yarn:
+Note: If you install `create-hardhat-web3` globally in your local computer using 
+`npm install -g create-hardhat-web3`, step 2 and step 3 can be skipped and directly project can be created using step 4.
+
+2. Create Node.js project using NPM or Yarn:
    
    `npm init -y` or
    `yarn init -y`
@@ -43,7 +46,6 @@ Follow these steps to set up and run the project locally.
 4. Use required template for initilization of your project.
 
 For Hardhat, Web3.js, Javascript project :
-   `npx create-hardhat-web3 init` or
    `npx create-hardhat-web3 init js`
 
 For Hardhat, Web3.js Typescript project :
