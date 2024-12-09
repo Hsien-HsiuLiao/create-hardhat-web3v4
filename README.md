@@ -1,4 +1,4 @@
-# create-hardhat-web3
+# create-hardhat-web3v1
 
 ## Introduction
 
@@ -46,6 +46,7 @@ Note: If you install `create-hardhat-web3` globally in your local computer using
 4. Use required template for initilization of your project.
 
 For Hardhat, Web3.js, Javascript project :
+
    `npx create-hardhat-web3 init js`
 
 For Hardhat, Web3.js Typescript project :
