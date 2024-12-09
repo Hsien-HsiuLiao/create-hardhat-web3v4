@@ -92,10 +92,16 @@ describe("Token contract", function () {
             );
 
             const transferEventToAddr1Promise = new Promise((resolve) => {
+                console.log("transferEventToAddr1Promise:", hardhatToken.events.Transfer({
+                    filter: { _from: owner }
+                }));
+
                 const subscription = hardhatToken.events.Transfer({
                     filter: { _from: owner }
                 })
-                    .on('data', function (event) {
+                   // .on('data', function (event) {
+                    .on('Subscription', function (event) {
+                        console.log("event: ", event);
                         // Check if the event parameters are correct
                         expect(event.returnValues._from).to.be.equal(owner);
                         expect(event.returnValues._to).to.be.equal(addr1);
@@ -129,7 +135,7 @@ describe("Token contract", function () {
 //https://docs.web3js.org/guides/hardhat_tutorial/#compile-test-and-deploy-the-contract
   // To change the status of the data we previously saved, we have to access the method container for the function (s) 
   //we desire and invoke the .send to broadcast our intention to the network , .send({from: owner}).
-            await hardhatToken.methods.transfer(addr1, 50).send();
+            await hardhatToken.methods.transfer(addr1, 50).send({from: owner});
             await transferEventToAddr1Promise;
 
             await hardhatToken.methods.transfer(addr2, 35).send({ from: addr1 });
