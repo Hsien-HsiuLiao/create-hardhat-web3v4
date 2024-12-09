@@ -15,6 +15,7 @@
     "template"
   ],
   "dependencies": {
+    "create-hardhat-web3": "^0.1.0",
     "fs-extra": "^11.2.0"
   }
 }
