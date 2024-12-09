@@ -1,0 +1,18 @@
+{
+  "name": "hardhat-web3-js-template",
+  "version": "0.1.0",
+  "description": "Template of a web3.js v4 based hardhat stack using JS and NPM",
+  "main": "index.js",
+  "author": "jdevcs",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomiclabs/hardhat-web3": "^2.0.1",
+    "hardhat": "^2.22.7"
+  }
+}
