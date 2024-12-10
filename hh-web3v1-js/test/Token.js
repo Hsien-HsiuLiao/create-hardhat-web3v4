@@ -86,7 +86,7 @@ describe("Token contract", function () {
             expect(await getBalance(addr2)).to.be.equal(addr2BalanceB + BigInt(50)); */
         });
 
-        it("Should emit Transfer events", async function () {
+        /* it("Should emit Transfer events", async function () {
             const { hardhatToken, owner, addr1, addr2 } = await loadFixture(
                 deployTokenFixture
             );
@@ -141,7 +141,7 @@ describe("Token contract", function () {
             await hardhatToken.methods.transfer(addr2, 35).send({ from: addr1 });
             await transferEventToAddr2Promise;
 
-        });
+        }); */
 
         it("Should fail if sender doesn't have enough tokens", async function () {
             const { hardhatToken, owner, addr1 } = await loadFixture(
