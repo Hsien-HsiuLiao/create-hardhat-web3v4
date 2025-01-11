@@ -85,11 +85,15 @@ describe("Token contract subsciption event test", function () {
             expect(await getBalance(addr1)).to.be.equal(BigInt(addr1BalanceB) - BigInt(50));
             expect(await getBalance(addr2)).to.be.equal(BigInt(addr2BalanceB) + BigInt(50));
         });
+//https://medium.com/coinmonks/how-to-subscribe-smart-contract-events-using-web3-1-0-93e996c06af2
+//https://github.com/Hsien-HsiuLiao/web3js-subscribe-example/blob/master/src/events.js
 
         it("Should emit Transfer events", async function () {
             const { hardhatToken, owner, addr1, addr2 } = await loadFixture(
                 deployTokenFixture
             );
+
+            
 
             const transferEventToAddr1Promise = new Promise((resolve) => {
               /*   console.log("transferEventToAddr1Promise:", hardhatToken.events.Transfer({
@@ -100,9 +104,7 @@ describe("Token contract subsciption event test", function () {
                     if (!error) console.log("subscriptionWeb3v1:",result);
                     else console.log("error:", error);
                 }); */
-                console.log(hardhatToken.events.Transfer({
-                    filter: { _from: owner }
-                }));
+                
 
                 hardhatToken.events.Transfer({
                     filter: { _from: owner }, // Using an array means OR: e.g. 20 or 23
@@ -155,10 +157,23 @@ describe("Token contract subsciption event test", function () {
   // To change the status of the data we previously saved, we have to access the method container for the function (s) 
   //we desire and invoke the .send to broadcast our intention to the network , .send({from: owner}).
             await hardhatToken.methods.transfer(addr1, 50).send({from: owner});
-            await transferEventToAddr1Promise;
+            console.log("sent 50");
+            const resultEvent = await hardhatToken.events.allEvents();//.Transfer(
+              //  {
+                //         filter: { _from: owner }
+                //     }
+                //    );
+                     console.log("event emitter: ", resultEvent);
+       //     await transferEventToAddr1Promise;
 
             await hardhatToken.methods.transfer(addr2, 35).send({ from: addr1 });
-            await transferEventToAddr2Promise;
+         //   await transferEventToAddr2Promise;
+         const resultEvent2 = await hardhatToken.events.Transfer(
+            //  {
+              //         filter: { _from: owner }
+              //     }
+                  );
+                   console.log("event emitter2: ", resultEvent2);
 
         });
 
